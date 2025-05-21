@@ -11,6 +11,11 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Hero />
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-md mx-auto mb-16">
+          <BrochureRequestForm />
+        </div>
+      </div>
       <StatsSection />
       <div className="container mx-auto px-4 py-16">
         <DestinationGrid />
@@ -19,9 +24,6 @@ const Index = () => {
         </div>
         <div className="my-16 lg:my-24">
           <WhyChooseUs />
-        </div>
-        <div className="my-16 lg:my-24 max-w-md mx-auto">
-          <BrochureRequestForm />
         </div>
       </div>
       <Footer />
