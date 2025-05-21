@@ -6,6 +6,9 @@ const StatsSection = () => {
         <div className="text-center mb-10">
           <span className="text-[#12756d] text-sm font-medium uppercase tracking-wider">Why Choose Us</span>
           <h2 className="text-3xl font-bold mt-2">Most stunning company travel and tours</h2>
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+            Where Authenticity Lights The Way... Experience the real Sri Lanka with Lantern Trails.
+          </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -6,9 +6,19 @@ const Hero = () => {
     <div className="relative bg-white min-h-[80vh]">
       <div className="container mx-auto px-4 pt-12 pb-20 flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <div className="mb-6">
+            <img 
+              src="/lovable-uploads/139b9be9-0386-43d1-94fd-66999f69963b.png" 
+              alt="Lantern Trails" 
+              className="h-16"
+            />
+          </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
             Explore Dream Tour & Travels
           </h1>
+          <p className="text-xl italic text-[#12756d] font-medium mb-6">
+            Where Authenticity Lights The Way…
+          </p>
           <p className="text-lg text-gray-600 mb-8 max-w-lg">
             Experience the authentic beauty of Sri Lanka with our curated cultural adventures and unforgettable experiences.
           </p>
