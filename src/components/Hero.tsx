@@ -46,11 +46,18 @@ const Hero = () => {
           </div>
         </div>
         <div className="lg:w-1/2 relative">
-          <img
-            src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=80"
-            alt="Sri Lanka landscape"
-            className="rounded-xl shadow-xl object-cover w-full h-[500px]"
-          />
+          <div className="relative rounded-xl overflow-hidden shadow-xl">
+            <img
+              src="/lovable-uploads/55232145-aa6d-4197-ae3e-c1e3065278bb.png"
+              alt="Sri Lanka adventures with Lantern Trails"
+              className="rounded-xl object-cover w-full"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+              <h3 className="text-white text-xl font-bold">Light Up Your Itineraries</h3>
+              <p className="text-white/90 text-sm">Fuel your journey with real-deal experiences</p>
+            </div>
+          </div>
+          
           <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-lg shadow-md">
             <div className="flex items-center gap-2">
               <div className="bg-green-100 p-2 rounded-full">
