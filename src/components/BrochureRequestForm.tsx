@@ -16,14 +16,33 @@ const BrochureRequestForm = () => {
     e.preventDefault();
     setIsLoading(true);
     
+    // Log for tracking
+    console.log(`Brochure request from: ${email} - to be forwarded to info@lanterntrails.travel`);
+    
+    // In a real implementation, this would be a server-side API call
+    // to handle the email forwarding securely
+    
     // Simulate form submission delay
     setTimeout(() => {
       setIsLoading(false);
       setIsSubmitted(true);
       toast({
         title: "Success!",
-        description: "Your brochure request has been received.",
+        description: "Your brochure request has been received. We'll send it to your email shortly.",
       });
+      
+      // In a production environment, you would use:
+      // 1. A server-side API endpoint
+      // 2. An email service like SendGrid, Mailchimp, etc.
+      // 3. Or a simple mailto link (less recommended but simplest option)
+      
+      // Simple mailto link option (for demo purposes):
+      try {
+        const mailtoLink = `mailto:info@lanterntrails.travel?subject=Brochure Request&body=Please send a brochure to: ${email}`;
+        window.open(mailtoLink);
+      } catch (error) {
+        console.error("Error opening mailto:", error);
+      }
     }, 1500);
   };
 
